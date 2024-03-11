@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import JobItem from './JobItem';
 
 interface Job {
@@ -19,7 +19,7 @@ function JobList() {
   const [jobs, setJobs] = useState<Job[]>([]);
 
   useEffect(() => {
-    fetch('/src/jobs_data.json')
+    fetch('/jobs_data.json')
       .then(response => response.json())
       .then(data => setJobs(data))
       .catch(error => console.error('Error fetching jobs:', error));

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
@@ -28,7 +28,7 @@ function JobItem({ company, logo, position, ...rest }: JobItemProps): JSX.Elemen
 
   return (
     <li className="job-item">
-      <img src={`/src/${logo}`} alt={`Logotyp för ${company}`} className="job-logo" />
+<img src={`/${logo}`} alt={`Logotyp för ${company}`} className="job-logo" />
       <div className="job-info">
         <h2>{company}</h2>
         <p>{position}</p>

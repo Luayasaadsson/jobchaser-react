@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react'; */
 import './App.css';
 import JobList from './components/JobList'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
